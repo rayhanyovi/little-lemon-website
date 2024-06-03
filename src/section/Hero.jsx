@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <header className="flex flex-row items-end px-36 py-20 gap-8">
+    <header id="home" className="flex flex-row items-end px-36 py-20 gap-8">
       <div className="flex flex-col w-10/12 gap-8 z-30">
         <h1 className="text-5xl font-bold">
           Seasonal Delights with Mediterranean Roots
@@ -14,14 +14,16 @@ function Hero() {
         </button>
         <div className="flex flex-row gap-2">
           <div className="flex flex-row items-center relative w-20">
-            <img className="rounded-full h-10" src="/stark.jpg"></img>
+            <img className="rounded-full h-10" src="/stark.jpg" alt=""></img>
             <img
               className="rounded-full h-10 absolute left-5"
               src="/stark.jpg"
+              alt=""
             ></img>
             <img
               className="rounded-full h-10 absolute left-9"
               src="/stark.jpg"
+              alt=""
             ></img>
           </div>
           <div>
@@ -36,11 +38,20 @@ function Hero() {
         </div>
       </div>
       <div className="w-full relative z-30">
-        <img src="/hero.png" alt="hero" className="relative w-11/12 z-20" />
+        <img
+          src="/hero.png"
+          alt="hero"
+          className="relative w-11/12 z-20"
+          alt=""
+        />
         <div className="bg-[#495E57] h-80 w-11/12 absolute top-5 left-3 z-0"></div>
       </div>
 
-      <img src="/leaves.png" className="w-8/12 z-10 absolute right-0 top-20" />
+      <img
+        src="/leaves.png"
+        className="w-8/12 z-10 absolute right-0 top-20"
+        alt=""
+      />
     </header>
   );
 }
