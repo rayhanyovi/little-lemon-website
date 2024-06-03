@@ -38,12 +38,7 @@ function Hero() {
         </div>
       </div>
       <div className="w-full relative z-30">
-        <img
-          src="/hero.png"
-          alt="hero"
-          className="relative w-11/12 z-20"
-          alt=""
-        />
+        <img src="/hero.png" alt="hero" className="relative w-11/12 z-20" />
         <div className="bg-[#495E57] h-80 w-11/12 absolute top-5 left-3 z-0"></div>
       </div>
 
