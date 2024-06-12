@@ -1,7 +1,10 @@
 function Hero() {
   return (
-    <header id="home" className="flex flex-row items-end px-36 py-20 gap-8">
-      <div className="flex flex-col w-10/12 gap-8 z-30">
+    <header
+      id="home"
+      className="flex flex-col-reverse pt-20  gap-8 lg:px-36 lg:flex-row overflow-hidden border-4 border-purple-400"
+    >
+      <div className="flex flex-col w-full gap-8 z-30">
         <h1 className="text-5xl font-bold">
           Seasonal Delights with Mediterranean Roots
         </h1>
@@ -14,15 +17,19 @@ function Hero() {
         </button>
         <div className="flex flex-row gap-2">
           <div className="flex flex-row items-center relative w-20">
-            <img className="rounded-full h-10" src="/stark.jpg" alt=""></img>
             <img
-              className="rounded-full h-10 absolute left-5"
-              src="/stark.jpg"
+              className="rounded-full h-10 border border-slate-100  border-2 border-slate-100"
+              src={`${process.env.PUBLIC_URL}/stark.jpg`}
               alt=""
             ></img>
             <img
-              className="rounded-full h-10 absolute left-9"
-              src="/stark.jpg"
+              className="rounded-full h-10 absolute left-5 border-2 border-slate-100"
+              src={`${process.env.PUBLIC_URL}/stark.jpg`}
+              alt=""
+            ></img>
+            <img
+              className="rounded-full h-10 absolute left-9  border-2 border-slate-100"
+              src={`${process.env.PUBLIC_URL}/stark.jpg`}
               alt=""
             ></img>
           </div>
@@ -37,14 +44,18 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="w-full relative z-30">
-        <img src="/hero.png" alt="hero" className="relative w-11/12 z-20" />
-        <div className="bg-[#495E57] h-80 w-11/12 absolute top-5 left-3 z-0"></div>
+      <div className="w-full relative z-30 items-center flex flex-col">
+        <img
+          src={`${process.env.PUBLIC_URL}/hero.png`}
+          alt="hero"
+          className="relative w-[25rem] z-20"
+        />
+        <div className="bg-[#495E57] w-[25rem] h-60 w-full absolute top-10 left-5 z-0"></div>
       </div>
 
       <img
-        src="/leaves.png"
-        className="w-8/12 z-10 absolute right-0 top-20"
+        src={`${process.env.PUBLIC_URL}/leaves.png`}
+        className="w-96 z-10 absolute left-20 top-12 -rotate-12"
         alt=""
       />
     </header>
