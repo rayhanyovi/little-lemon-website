@@ -1,6 +1,6 @@
 function Navbar() {
   return (
-    <nav className="flex flex-row justify-evenly items-center p-4 border-b-2 border-[#495E57]">
+    <nav className="flex flex-row justify-evenly items-center p-4 border-b-2 border-[#495E57] mx-8 md:mx-20">
       <ul className="hidden list-none flex flex-row gap-12 font-semibold">
         <li>
           <a href="#home">Home</a>
