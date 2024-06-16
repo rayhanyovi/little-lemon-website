@@ -12,8 +12,8 @@ function AboutUs() {
           Get to know the heart and soul behind Little Lemon, <br /> where
           passion for food meets community.
         </p>
-        <div className="flex flex-row mt-8 h-fit gap-16">
-          <div className="w-3/5">
+        <div className="flex flex-col-reverse md:flex-row mt-8 h-fit gap-8 md:gap-16">
+          <div className="w-full md:w-3/5">
             <p>
               Based in Chicago, Illinois, Little Lemon is a family-owned
               Mediterranean restaurant that masterfully combines traditional
@@ -39,8 +39,8 @@ function AboutUs() {
             <br />
             <br />
           </div>
-          <div className="flex flex-col gap-8 w-2/5 -mt-24">
-            <div className="flex -mt-10">
+          <div className="flex flex-row md:flex-col gap-8 w-full md:w-2/5 md:-mt-24">
+            <div className="flex lg:-mt-10">
               <div className="relative z-30 h-fit w-fit overflow-visible">
                 <div className="bg-[#495E57] absolute top-[0.5rem] left-[0.5rem] z-[-1] w-full h-full"></div>
                 <img
@@ -56,7 +56,7 @@ function AboutUs() {
                 <img
                   src={`${process.env.PUBLIC_URL}/Mario_Adrian.png`}
                   alt="hero"
-                  className="sm:w-full lg:w-[19rem] z-50 h-auto"
+                  className=" lg:w-[19rem] z-50 h-auto"
                 />
               </div>
             </div>
