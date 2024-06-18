@@ -14,7 +14,7 @@ function AboutUs() {
         </p>
         <div className="flex flex-col-reverse md:flex-row mt-8 h-fit gap-8 md:gap-16">
           <div className="w-full md:w-3/5">
-            <p>
+            <p className="text-sm md:text-base xl:text-lg 2xl:text-2xl">
               Based in Chicago, Illinois, Little Lemon is a family-owned
               Mediterranean restaurant that masterfully combines traditional
               recipes with a modern twist. Our chefs, inspired by the rich
