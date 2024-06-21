@@ -41,7 +41,7 @@ const dummyData = [
 
 function MenuCard() {
   return (
-    <div className="flex flex-row w-full overflow-x-auto gap-4 snap-x">
+    <div className="flex flex-row w-full overflow-x-auto gap-4 snap-x h-fit">
       {dummyData.map((item, index) => (
         <div
           key={index}

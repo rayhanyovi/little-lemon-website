@@ -9,7 +9,7 @@ import Reserve from "./section/Reserve";
 import Footer from "./component/Footer";
 function App() {
   return (
-    <div className="bg-white w-full flex flex-col min-h-screen h-fit text-[#495E57] overflow-x-hidden">
+    <div className="bg-white w-full flex flex-col min-h-screen h-fit text-[#495E57] overflow-x-hidden ">
       <Navbar />
       <Hero />
       <PopularDish />

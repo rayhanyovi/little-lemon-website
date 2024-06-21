@@ -1,30 +1,74 @@
+import { Link } from "react-scroll";
+import React from "react";
 function Navbar() {
   return (
-    <nav className="flex flex-row justify-evenly items-center p-4 border-b-2 border-[#495E57] mx-8 md:mx-20">
-      <ul className="hidden list-none flex flex-row gap-12 font-semibold">
+    <nav className="flex flex-row justify-evenly items-center p-4 border-b-2 border-[#495E57] mx-8 md:mx-20 ">
+      <ul className="list-none flex flex-row gap-12 font-semibold w-full justify-center">
         <li>
-          <a href="#home">Home</a>
+          <Link
+            to="home"
+            smooth={true}
+            duration={250}
+            className="cursor-pointer hover:font-bold duration-200"
+          >
+            Home
+          </Link>
         </li>
         <li>
-          <a href="#home">Menus</a>
+          <Link
+            to="popular-dish"
+            smooth={true}
+            duration={250}
+            className="cursor-pointer hover:font-bold duration-200"
+          >
+            Menus
+          </Link>
         </li>
         <li>
-          <a href="#home">Reviews</a>
+          <Link
+            to="review"
+            smooth={true}
+            duration={250}
+            className="cursor-pointer hover:font-bold duration-200"
+          >
+            Review
+          </Link>
         </li>
       </ul>
       <img
         src={`${process.env.PUBLIC_URL}//Asset 16@4x.png`}
-        className="h-10"
+        className="h-10 w-full object-contain"
       />
-      <ul className="hidden list-none flex flex-row gap-12 font-semibold ">
+      <ul className="list-none flex flex-row gap-12 font-semibold w-full justify-center">
         <li>
-          <a href="#home">Our Story</a>
+          <Link
+            to="about-us"
+            smooth={true}
+            duration={250}
+            className="cursor-pointer hover:font-bold duration-200"
+          >
+            Our Story
+          </Link>
         </li>
         <li>
-          <a href="#home">Gallery</a>
+          <Link
+            to="gallery"
+            smooth={true}
+            duration={250}
+            className="cursor-pointer hover:font-bold duration-200"
+          >
+            Gallery
+          </Link>
         </li>
         <li>
-          <a href="#home">Contact</a>
+          <Link
+            to="reserve"
+            smooth={true}
+            duration={250}
+            className="cursor-pointer hover:font-bold duration-200"
+          >
+            Reservation
+          </Link>
         </li>
       </ul>
     </nav>

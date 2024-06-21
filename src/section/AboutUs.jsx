@@ -7,14 +7,14 @@ function AboutUs() {
       className="px-8 relative flex flex-col-reverse md:flex-row lg:flex-row pt-20 lg:px-36 md:px-24 "
     >
       <div className="flex flex-col w-full gap-2">
-        <h1 className="text-3xl font-bold text-left">Our Story</h1>
+        <h1 className="text-3xl font-bold text-left  xl:text-4xl">Our Story</h1>
         <p className="text-sm lg:text-lg text-left">
           Get to know the heart and soul behind Little Lemon, <br /> where
           passion for food meets community.
         </p>
         <div className="flex flex-col-reverse md:flex-row mt-8 h-fit gap-8 md:gap-16">
           <div className="w-full md:w-3/5">
-            <p className="text-sm md:text-base xl:text-lg 2xl:text-2xl">
+            <p className="text-sm md:text-base xl:text-lg">
               Based in Chicago, Illinois, Little Lemon is a family-owned
               Mediterranean restaurant that masterfully combines traditional
               recipes with a modern twist. Our chefs, inspired by the rich

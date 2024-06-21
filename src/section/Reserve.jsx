@@ -75,15 +75,12 @@ function Reserve() {
   };
 
   return (
-    <header
-      id="populardish"
+    <section
+      id="reserve"
       className="flex flex-col gap-8 pt-20 px-8 lg:px-36 md:px-24 items-center justify-center"
     >
       <div className="flex flex-col w-full gap-2">
-        <h1
-          className="text-3xl font-bold text-center"
-          onClick={() => console.log("SelectedDate", selectedDate)}
-        >
+        <h1 className="text-3xl font-bold text-center  xl:text-4xl">
           Dine With Us
         </h1>
         <p
@@ -190,7 +187,7 @@ function Reserve() {
             />
           </Form.Item>
 
-          <Form.Item className="w-full flex items-center justify-center">
+          <Form.Item className="w-full flex items-center justify-center pl-8 mt-8">
             <ConfigProvider
               theme={{
                 components: {
@@ -214,7 +211,7 @@ function Reserve() {
           </Form.Item>
         </Form>
       </div>
-    </header>
+    </section>
   );
 }
 

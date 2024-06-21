@@ -1,3 +1,5 @@
+import { Link } from "react-scroll";
+import React from "react";
 function Hero() {
   return (
     <header
@@ -10,16 +12,22 @@ function Hero() {
         alt=""
       />
       <div className="flex flex-col w-full gap-8 z-30 md:w-fit">
-        <h1 className="text-4xl lg:text-5xl font-bold">
+        <h1 className="text-4xl lg:text-5xl font-bold  xl:text-6xl">
           Seasonal Delights with Mediterranean Roots
         </h1>
         <p className="md:text-lg lg:text-xl">
           "Enjoy a dynamic menu that changes with the seasons, featuring
           Mediterranean classics and innovative new dishes."
         </p>
-        <button className="bg-[#F4CE14] w-fit px-2 py-1 md:px-4 py-2 font-semibold hover:bg-yellow-300 duration-200">
-          Reserve Now
-        </button>
+        <Link
+          to="reserve"
+          smooth={true}
+          duration={250}
+          className="bg-[#F4CE14] w-fit px-2 py-1 md:px-4 py-2 font-semibold hover:bg-yellow-300 duration-200 cursor-pointer"
+        >
+          Reservation
+        </Link>
+
         <div className="flex flex-row gap-2 ">
           <div className="flex flex-row items-center relative w-20">
             <img
